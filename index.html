@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIEarnClub — Master AI Side Hustles & Build Your Income Stream</title>
+  <meta name="description" content="Join AIEarnClub and learn how to make money with AI tools. Weekly case studies, step-by-step guides, and a community of AI earners. Start your AI side hustle today.">
+
+  <meta property="og:title" content="AIEarnClub — AI Side Hustles That Actually Work">
+  <meta property="og:description" content="Practical AI money-making strategies. No hype, just results.">
+  <meta property="og:type" content="website">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 17px; line-height: 1.65; color: #1a1a2e;
+      background: #fff; -webkit-font-smoothing: antialiased;
+    }
+    .container { width: 100%; max-width: 680px; margin: 0 auto; padding: 0 20px; }
+
+    section { padding: 60px 0; }
+    .hero { padding: 70px 0 50px; text-align: center; }
+    .hero .badge {
+      display: inline-block; background: #eef2ff; color: #4338ca; font-size: 13px;
+      font-weight: 600; padding: 6px 16px; border-radius: 20px; margin-bottom: 20px;
+    }
+    .hero h1 { font-size: 38px; font-weight: 800; line-height: 1.2; margin-bottom: 16px; letter-spacing: -0.5px; }
+    .hero h1 span { color: #4338ca; }
+    .hero .subtitle { font-size: 18px; color: #4b5563; margin-bottom: 32px; max-width: 520px; margin-left: auto; margin-right: auto; }
+
+    .cta-button {
+      display: inline-block; background: #4338ca; color: #fff; font-size: 17px; font-weight: 600;
+      padding: 14px 40px; border-radius: 10px; text-decoration: none; border: none; cursor: pointer;
+      transition: background 0.2s;
+    }
+    .cta-button:hover { background: #3730a3; }
+    .cta-button.secondary {
+      background: #fff; color: #4338ca; border: 2px solid #4338ca;
+    }
+    .cta-button.secondary:hover { background: #eef2ff; }
+
+    .trust-bar {
+      display: flex; justify-content: center; gap: 32px; margin-top: 40px;
+      font-size: 14px; color: #6b7280;
+    }
+    .trust-bar span { font-weight: 600; color: #374151; }
+
+    .section-label {
+      font-size: 13px; text-transform: uppercase; letter-spacing: 1.5px; color: #4338ca;
+      font-weight: 700; margin-bottom: 8px;
+    }
+    .section-title { font-size: 30px; font-weight: 800; margin-bottom: 40px; line-height: 1.25; }
+    .section-title.centered { text-align: center; }
+
+    .cards { display: grid; gap: 16px; }
+    .card {
+      background: #f9fafb; border: 1px solid #e5e7eb;
+      border-radius: 12px; padding: 24px;
+    }
+    .card .icon { font-size: 28px; margin-bottom: 10px; }
+    .card h3 { font-size: 17px; font-weight: 700; margin-bottom: 6px; }
+    .card p { font-size: 15px; color: #4b5563; }
+
+    .testimonials { display: grid; gap: 16px; }
+    .testimonial {
+      background: #f9fafb; border: 1px solid #e5e7eb;
+      border-radius: 12px; padding: 24px;
+    }
+    .testimonial .quote { font-size: 15px; color: #374151; margin-bottom: 12px; font-style: italic; }
+    .testimonial .author { font-weight: 700; font-size: 14px; }
+    .testimonial .author-sub { font-size: 13px; color: #6b7280; }
+
+    .stats { display: flex; justify-content: center; gap: 48px; text-align: center; margin-bottom: 40px; flex-wrap: wrap; }
+    .stat-num { font-size: 36px; font-weight: 800; color: #4338ca; }
+    .stat-label { font-size: 14px; color: #6b7280; }
+
+    .offer-box {
+      background: #4338ca; color: #fff; text-align: center; padding: 48px 24px; border-radius: 16px;
+    }
+    .offer-box h2 { font-size: 28px; font-weight: 800; margin-bottom: 12px; }
+    .offer-box .price { font-size: 48px; font-weight: 800; margin-bottom: 4px; }
+    .offer-box .price-period { font-size: 15px; color: #c7d2fe; margin-bottom: 20px; }
+    .offer-box .features { list-style: none; margin-bottom: 28px; }
+    .offer-box .features li { margin-bottom: 8px; font-size: 15px; color: #e0e7ff; }
+    .offer-box .cta-button {
+      background: #fff; color: #4338ca; padding: 16px 48px; font-size: 18px;
+    }
+    .offer-box .cta-button:hover { background: #eef2ff; }
+    .offer-box .guarantee { font-size: 13px; color: #c7d2fe; margin-top: 12px; }
+
+    .faq-item { border-bottom: 1px solid #e5e7eb; padding: 20px 0; }
+    .faq-item:first-child { padding-top: 0; }
+    .faq-item h3 { font-size: 17px; font-weight: 700; margin-bottom: 8px; }
+    .faq-item p { font-size: 15px; color: #4b5563; }
+
+    footer {
+      text-align: center; padding: 40px 20px; font-size: 13px; color: #9ca3af;
+      border-top: 1px solid #e5e7eb;
+    }
+    footer a { color: #4338ca; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+    footer .links { margin-bottom: 12px; }
+    footer .links a { margin: 0 10px; }
+
+    @media (min-width: 520px) {
+      .cards { grid-template-columns: repeat(3, 1fr); }
+      .testimonials { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (max-width: 519px) {
+      .hero h1 { font-size: 28px; }
+      .section-title { font-size: 24px; }
+      .stats { gap: 24px; }
+    }
+  </style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="container">
+    <div class="badge">2500+ Members Worldwide</div>
+    <h1>Turn AI Tools Into <span>Real Income</span> — Week by Week</h1>
+    <p class="subtitle">
+      Join AIEarnClub and get actionable case studies, step-by-step guides,
+      and a community that actually makes money with AI. No hype. Just results.
+    </p>
+    <a href="#join" class="cta-button">Join AIEarnClub Now</a>
+    <div class="trust-bar">
+      <span>Free to Join</span> <span>2500+ Members</span> <span>Weekly Tips</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <p class="section-label">Proven Results</p>
+    <div class="stats">
+      <div><div class="stat-num">$1.2M+</div><div class="stat-label">Total Member Earnings</div></div>
+      <div><div class="stat-num">50+</div><div class="stat-label">Case Studies</div></div>
+      <div><div class="stat-num">94%</div><div class="stat-label">Satisfaction Rate</div></div>
+    </div>
+  </div>
+</section>
+
+<section style="background: #fafbff;">
+  <div class="container">
+    <p class="section-label">What You Get</p>
+    <h2 class="section-title">Everything You Need to Start Earning With AI</h2>
+    <div class="cards">
+      <div class="card">
+        <div class="icon">&#x1F4E6;</div>
+        <h3>Weekly Case Studies</h3>
+        <p>Real examples of people making $500-$5000/month with AI tools. We break down exactly how they did it.</p>
+      </div>
+      <div class="card">
+        <div class="icon">&#x1F527;</div>
+        <h3>Tool & Prompt Library</h3>
+        <p>Access our curated collection of AI tools, prompts, and templates that save you hours of trial and error.</p>
+      </div>
+      <div class="card">
+        <div class="icon">&#x1F465;</div>
+        <h3>Private Community</h3>
+        <p>Connect with fellow AI earners. Share wins, ask questions, and find collaboration opportunities.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <p class="section-label">Member Stories</p>
+    <h2 class="section-title centered">Hear From Our Members</h2>
+    <div class="testimonials">
+      <div class="testimonial">
+        <p class="quote">"Started with zero experience. Following the case studies, I built a simple AI content tool and made my first $800 last month."</p>
+        <p class="author">James K.</p>
+        <p class="author-sub">Marketing Consultant, Austin TX</p>
+      </div>
+      <div class="testimonial">
+        <p class="quote">"The prompt library alone saved me 20 hours a week. I now run an AI-powered Etsy shop that's doing $3K/month."</p>
+        <p class="author">Priya M.</p>
+        <p class="author-sub">Etsy Seller, London UK</p>
+      </div>
+      <div class="testimonial">
+        <p class="quote">"I was skeptical but the step-by-step approach worked. Now I freelance as an AI workflow consultant charging $75/hour."</p>
+        <p class="author">David L.</p>
+        <p class="author-sub">Freelancer, Toronto CA</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="join" style="background: #fafbff;">
+  <div class="container">
+    <div class="offer-box">
+      <h2>Start Your AI Side Hustle Today</h2>
+      <div class="price">Free</div>
+      <div class="price-period">to Join AIEarnClub</div>
+      <ul class="features">
+        <li>&#x2713; Weekly AI money-making case studies</li>
+        <li>&#x2713; Curated tool & prompt library</li>
+        <li>&#x2713; Private community access</li>
+        <li>&#x2713; Step-by-step action plans</li>
+      </ul>
+      <a href="#" class="cta-button">Join AIEarnClub Now</a>
+      <p class="guarantee">No credit card required. Join free, upgrade when you're ready.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 class="section-title centered">Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3>Is this really free?</h3>
+      <p>Yes. The basic membership is completely free and includes weekly case studies and community access. Premium features are optional.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Do I need technical skills?</h3>
+      <p>No. Our guides are designed for beginners. If you can use a web browser, you can follow along. We cover everything step by step.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How fast can I see results?</h3>
+      <p>Many members report their first earnings within 2-4 weeks of applying our methods. Results vary based on effort and consistency.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What AI tools do you cover?</h3>
+      <p>We cover ChatGPT, Midjourney, Claude, DALL-E, Stable Diffusion, and emerging tools. New tools are added weekly.</p>
+    </div>
+  </div>
+</section>
+
+<section style="text-align: center; padding: 40px 0 60px;">
+  <div class="container">
+    <h2 style="font-size: 24px; font-weight: 800; margin-bottom: 12px;">Ready to Start Earning With AI?</h2>
+    <p style="font-size: 17px; color: #4b5563; margin-bottom: 24px;">Join 2500+ members already building their AI income streams.</p>
+    <a href="#join" class="cta-button">Join AIEarnClub Now</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="links">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="terms.html">Terms of Service</a>
+    </div>
+    <p>2026 AIEarnClub.com — All rights reserved.</p>
+    <p style="margin-top: 4px;">Empowering the AI-driven economy, one earner at a time.</p>
+  </div>
+</footer>
+
+</body>
+</html>
